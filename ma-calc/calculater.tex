@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+
+
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+\title{
+	\huge ASSIGNMENT NO. 1
+}
+\date{\normalsize}
+\begin{document}
+\maketitle
+\section{TITLE:} Write a mobile application to generate a Scientific calculater using J2ME/Python/Scala/C++/Android.
+\section{OBJECTIVE:} 
+	\begin{itemize}
+		\item To understand Android Operating System. 
+		\item To implement Mobile Application Using Android OS.
+	\end{itemize}
+\section{SOFTWARE REQUIREMENT:}
+	\begin{itemize}
+		\item Java Development Kit (JDK) 
+		\item Android Studio IDE 
+		\item Android Operating System
+	\end{itemize}
+\section{MATHEMATICAL MODEL:}
+	Consider a set S consisting of all elements related to a program. 
+	The mathematical model is given as below.  \\  \\
+    $S=\{input,output,function,success,failure\}$
+	\begin{itemize}
+		\item Input
+			\begin{itemize}
+				\item Numbers
+			\end{itemize} 
+		\item Output
+			\begin{itemize}
+				\item Result
+			\end{itemize} 
+		\item Functions
+			\begin{itemize}
+				\item Add()
+				\item Subtract()
+				\item Multiply()
+				\item Divide()
+				\item sin
+				\item cos
+				\item tan
+			\end{itemize} 
+		\item Success: Result is displayed
+		\item Failure: Wrong Result is displayed
+	\end{itemize} 
+\section{ALGORITHM:}
+	\begin{itemize}
+		\item Start
+		\item Accept the Number from the User
+		\item Perform the computation
+		\item Stop
+	\end{itemize}
+
+\section{THEORY:}
+	\subsection{Android:}
+		 Android is an open source mobile operating system (OS) currently developed by Google, based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets \newline
+Android was built from the ground-up to enable developers to create compelling mobile applications that take full advantage of all a handset has to oﬀer. It was built to be truly open \newline
+Android has an active community of developers and enthusiasts who use the Android Open Source Project (AOSP) source code to develop and distribute their own modiﬁed versions of the operating system \newline
+Android provides access to a wide range of useful libraries and tools that can be used to build rich applications. Also includes a full set of tools that have been built from the ground up alongside the platform providing developers with high productivity and deep insight into their applications.\newline
+	\subsection{Trignometric Function:}
+		\begin{itemize}
+			\item sin
+				public static double sin(double a)\newline
+				Returns the trigonometric sine of an angle. Special cases:
+				\begin{itemize}
+				\item If the argument is NaN or an infinity, then the result is NaN.
+				\item If the argument is zero, then the result is a zero with the same sign as the argument.
+				\end{itemize}
+				
+				The computed result must be within 1 ulp of the exact result. Results must be semi-monotonic.
+
+				Parameters:\newline
+			           a - an angle, in radians.\newline
+				Returns:\newline
+				the sine of the argument.
+			\item cos
+				public static double cos(double a)\newline
+				Returns the trigonometric sine of an angle. Special cases:
+				\begin{itemize}
+				\item If the argument is NaN or an infinity, then the result is NaN.
+				\end{itemize}
+				
+				The computed result must be within 1 ulp of the exact result. Results must be semi-monotonic.
+
+				Parameters:\newline
+			           a - an angle, in radians.\newline
+				Returns:\newline
+				the cosine of the argument.
+			\item tan
+				public static double tan(double a)\newline
+				Returns the trigonometric sine of an angle. Special cases:
+				\begin{itemize}
+				\item If the argument is NaN or an infinity, then the result is NaN.
+				\item If the argument is zero, then the result is a zero with the same sign as the argument.
+				\end{itemize}
+				
+				The computed result must be within 1 ulp of the exact result. Results must be semi-monotonic.
+
+				Parameters:\newline
+			           a - an angle, in radians.\newline
+				Returns:\newline
+				the tangent of the argument.
+		\end{itemize}
+
+\section{TESTING:}
+	\subsection{Positive/Negative Testing:}
+	Positive Testing:\newline
+	If the give Input is valid then it computes the number and give the value.\newline
+	Example:2+3+4+5 \newline
+	Result:14\newline
+
+	Negative Testing:\newline
+	If the give Input is not valid then it will give error.\newline
+	Example:2+3+4+ \newline
+	Result:Error
+	
+\section{CONCLUSION:}
+We have successfully developed an Android Mobile Application for Scientific Calculator
+
+\end{document}

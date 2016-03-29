@@ -1,0 +1,132 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+\begin{document}
+
+\begin{center}
+\textbf{\bfseries\Large ASSIGNMENT NO. 2}
+\\[1cm]
+\end{center}
+
+
+\section{Aim : } 
+	Write a Mobile App program using J2ME /Python /Scala /Java /Android to check the palindrome in a
+given string.
+
+
+\section{Objective : }  
+	\begin{itemize}
+		\item To understand Android Operating System.
+		\item To implement Mobile Application Using Android OS.
+	\end{itemize}
+
+\section{Software Requirement : }  
+	\begin{itemize}
+    	\item Java Development Kit (JDK)
+		\item Android Studio IDE
+		\item Android Operating System
+	\end{itemize}
+
+\section{Mathematical Model : }  
+	Consider a set S consisting of all elements related to a program. 
+	The mathematical model is given as below.  \\  \\
+    $S=\{input,output,function,success,failure\}$
+	\begin{itemize}
+		\item Input :
+			\begin{enumerate}
+				\item String
+			\end{enumerate}
+		\item Output :
+        	\begin{enumerate}
+				\item Is Palindrome
+                \item Is not a Palindrome
+			\end{enumerate}
+		\item Function :
+			\begin{enumerate}
+				\item reverseString()
+   				\item matchBothStrings()
+			\end{enumerate}
+		\item Success : The string accepted is Palindrome
+        \item Failure : The string accepted is not a Palindrome
+	\end{itemize}  
+
+\section{Algorithm : }
+	\begin{itemize}
+		\item Start
+        \item Accept string
+        \item Reverse the accepted string
+        \item if $originalString.equals(reverseString)$ // that is palindrome
+        	\begin{itemize}
+					\item return  true // String is palindrome
+			\end{itemize}
+        \item else
+        	\begin{itemize}
+					\item return  false // String is not palindrome
+			\end{itemize}
+        \item Stop
+	\end{itemize}
+
+
+\section{Theory : }
+ 	
+\subsection{Android:}
+	\begin{itemize}
+		\item Android is an open source mobile operating system (OS) currently developed by Google, based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets
+        \item Android was built from the ground-up to enable developers to create compelling mobile applications that take full advantage of all a handset has to offer. It was built to be truly open
+        \item Android has an active community of developers and enthusiasts who use the Android Open Source Project (AOSP) source code to develop and distribute their own modified versions of the operating system
+        \item Android provides access to a wide range of useful libraries and tools that can be used to build rich applications. Also includes a full set of tools that have been built from the ground up alongside the platform providing developers with high productivity and deep insight into their applications.
+	\end{itemize}
+\subsection{Android Application Development:}    
+	\subsection {Creating new project}
+    	\begin{itemize}
+			\item Open Android Studio
+        	\item Select "Create new Android app"
+	        \item Set minimum SDK version
+	        \item Set the package name for the application
+	        \item Select the starting $Activity$
+	        \item Finish creating the project
+		\end{itemize}  
+    \subsection {Android Application Components}
+        \begin{enumerate}
+        	\item \textbf{Android Manifest}: All the components of the Android application are loosely coupled by the application manifest. It hat describes each component of the application and how they interact.
+			\item \textbf{Activity}: An activity represents a single screen with a user interface,in-short Activity performs actions on the screen. For example, an email application might have one activity that shows a list of new emails.
+            \item \textbf{Services}: A service is a component that runs in the background to perform long-running operations. For example, a service might play music in the background while the user is in a different application.
+            \item \textbf{Broadcast Receivers}: Broadcast Receivers simply respond to broadcast messages from other applications or from the system. For example, applications can also initiate broadcasts to let other applications know that some data has been downloaded to the device and is available for them to use, so this is broadcast receiver who will intercept this communication and will initiate appropriate action.
+            \item \textbf{Content Providers}: A content provider component supplies data from one application to others on request. The data may be stored in the file system, the database or somewhere else entirely.
+		\end{enumerate} 
+\subsection{Palindrome} 
+	\begin{itemize}
+		\item Palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word divider.
+	\end{itemize}
+
+\section{Testing :}
+
+\subsection {Positive / Negative Testing}
+
+\textbf{Positive Testing :}\\
+If the reverse of original entered string matches the original entered string then the entered string is palindrome.\\
+Example- Input: "121" \\
+		 Output: true\\
+
+\textbf{ Negative Testing :}\\
+If the reverse of original entered string does not match the original entered string then the entered string is palindrome.\\
+Example- Input: "122" \\
+		 Output: false\\
+
+\section{Conclusion : }
+
+We have successfully developed an Android Mobile Application to check whether a given string is palindrome or not.
+
+
+\end{document}
+ 
